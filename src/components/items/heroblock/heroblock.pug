@@ -1,8 +1,9 @@
 
 mixin heroblock({title, subtitle = '', image})
-    img(src='image/' + image, alt="")
-    h1= title
-    h2= subtitle
+    .heroblock(style="background-image: url(image/" + image + ")")
+        .heroblock__content
+            h1.main-title= title
+            h2.main-subtitle= subtitle
 
 
 +heroblock({
