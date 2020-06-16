@@ -1,0 +1,13 @@
+# Игнорировать папку node_modules.
+/node_modules/*
+# Игнорировать папку со сборкой проекта.
+/dist/*
+
+
+# Игнорировать vs code.
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
