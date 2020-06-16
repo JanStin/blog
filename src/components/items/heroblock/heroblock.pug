@@ -1,0 +1,12 @@
+
+mixin heroblock({title, subtitle = '', image})
+    img(src='image/' + image, alt="")
+    h1= title
+    h2= subtitle
+
+
++heroblock({
+    title: 'Title must long',
+    subtitle: 'Subtitle',
+    image: 'rubyfoodfight.png'
+})

@@ -11,7 +11,7 @@ const PATHS = {
     src: path.join(__dirname, '../src'),
     dist: path.join(__dirname, '../dist'),
     assets: 'assets',
-    img: '../../img',
+    image: '../../image',
     fonts: '../../fonts',
     theme: '/theme/'
 };
@@ -103,8 +103,8 @@ let config = {
                 loader: 'file-loader',
                 options: {
                     name: `[name].[ext]`,
-                    publicPath: `${PATHS.img}`,
-                    outputPath: `/img/`
+                    publicPath: `${PATHS.image}`,
+                    outputPath: `/image/`
                 },
             },
             {
@@ -134,7 +134,7 @@ let config = {
 
         new CopyWebpackPlugin([
             {
-                from: `${PATHS.src}/components`, to: `img`,
+                from: `${PATHS.src}/components`, to: `image`,
                 ignore: ['*js' , '*scss', '*pug', '*sass' ],
                 flatten:true
             }
