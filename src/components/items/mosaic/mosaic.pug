@@ -1,0 +1,22 @@
+mixin mosaic()
+    -let imageList = ['1m.jpg','2m.jpg','3m.jpg','4m.jpg', '5m.jpg', '6m.jpg']
+    .mosaic
+        .mosaic__top 
+            .mosaic__half 
+                img(src="image/" + imageList[0], alt="" class="mosaic__image")
+                .mosaic__overlay
+                        p.mosaic__text Text
+            .mosaic__half
+                img(src="image/" + imageList[1], alt="" class="mosaic__image")
+                .mosaic__overlay
+                        p.mosaic__text Text
+        .mosaic__bottom
+            -for (let i = 2; i < 6; i++)
+                .mosaic__quarter
+                    img(src="image/" + imageList[i], alt="" class="mosaic__image")
+                    .mosaic__overlay
+                        p.mosaic__text Text
+                
+                
+
++mosaic()
