@@ -1,13 +1,16 @@
 
-mixin heroblock({title, subtitle = '', image})
+mixin heroblock({title, subtitle = '', image, button})
     .heroblock(style="background-image: url(image/" + image + ")")
         .heroblock__content
-            h1.main-title= title
-            h2.main-subtitle= subtitle
+            h2.main-subtitle.heroblock__subtitle= subtitle
+            h1.main-title.heroblock__title= title
+            p.heroblock__button= button
+            
 
 
-+heroblock({
-    title: 'Title must long',
-    subtitle: 'Subtitle',
-    image: 'rubyfoodfight.png'
-})
+//- +heroblock({
+//-     title: 'My name is Misha Kirilin',
+//-     subtitle: "I'm a programmer",
+//-     image: 'rubyfoodfight.png',
+//-     button: 'Узнать больше'
+//- })
