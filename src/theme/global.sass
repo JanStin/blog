@@ -42,12 +42,13 @@ li
     font-size: 1.1rem
     line-height: 1.5rem
 
+// Стили для заголовка h1.
 .maintitle
     margin: 1rem 0 2rem 0
     font-size: 2rem
     line-height: 2.1rem
     text-align: left
-
+// Стили для заголовка h1 и h2 соотвественно.
 .subtitle
     margin: 1.6rem 0 1.1rem 0
     font-size: 1.7rem
@@ -58,19 +59,30 @@ li
         line-height: 1.5rem
         margin: 1.1rem 0 0.5rem 0
         text-align: left
-
+// Отступ для обычного абзаца
 .simpletext
     padding-bottom: 1rem
-
+// Жирный текст
 .bold
     font-weight: bold
 
+// Отступы для картинок и их размер.
 .images
     margin: 1rem 0 2rem 0
     width: 100%
 
+// Отступы для списков.
 .list-indent
     @media screen and ( max-width:  700px)
         padding-left: 20px
     @media screen and ( max-width:  400px)
         padding-left: 10px
+
+// Блок статьи.
+.article 
+    display: flex 
+    flex-direction: column
+    max-width: 720px
+    margin: 0 auto
+    padding: 0 15px
+    text-align: justify
