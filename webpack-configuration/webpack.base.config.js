@@ -82,7 +82,6 @@ let config = {
                         options: {
                             resources: [
                                 `${PATHS.src}${PATHS.theme}variables.sass`,
-                                `${PATHS.src}${PATHS.theme}mixins.sass`,
                                 `${PATHS.src}${PATHS.theme}functions.sass`,
                             ],
                         }
