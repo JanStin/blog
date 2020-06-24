@@ -13,10 +13,12 @@ p, h1, h2, h3
     padding: 0   
 
 h1, h2, h3 
-    font-family: PlayfairDisplay, 'Times New Roman', Times, serif
+    font-family: $main-font-title
+
+cite, blockquote, q, a, li, p
+    font-family: $main-font
 
 cite, blockquote, q
-    font-family: OpenSans, Arial, Helvetica, sans-serif
     font-style: italic 
 
 blockquote
@@ -31,45 +33,42 @@ cite
 p 
     font-size: 1rem
     line-height: 1.3rem
-    font-family: OpenSans, Arial, Helvetica, sans-serif
+
 
 a 
     text-decoration: none
     color: black
-    font-family: OpenSans, Arial, Helvetica, sans-serif
+
 
 li 
     margin: 0 0 10px 20px
     font-size: 1.1rem
     line-height: 1.5rem
-    font-family: OpenSans, Arial, Helvetica, sans-serif
+
 
 // Стили для заголовка h1.
 .maintitle
-    margin: 1rem 0 2rem 0
     font-size: 2rem
     line-height: 2.1rem
-    text-align: left
-    &_onlysize
-        font-size: 2rem
-        line-height: 2.1rem
+    &_margin
+        margin: 1rem 0 2rem 0
 // Стили для заголовка h1 и h2 соотвественно.
 .subtitle
     margin: 1.6rem 0 1.1rem 0
     font-size: 1.7rem
     line-height: 1.8rem
-    text-align: left
     &_levelthree
         font-size: 1.4rem
         line-height: 1.5rem
         margin: 1.1rem 0 0.5rem 0
-        text-align: left
+
+// Выравнивание текста влево 
+.textleft
+    text-align: left
+
 // Отступ для обычного абзаца
 .simpletext
     padding-bottom: 1rem
-// Жирный текст
-.bold
-    font-weight: bold
 
 // Отступы для картинок и их размер.
 .images
@@ -124,3 +123,8 @@ li
             width: 288px
             margin: 1.6rem auto
             position: static
+
+// Размеры логотипа
+.logo
+    width: 75px
+    height: 35px
