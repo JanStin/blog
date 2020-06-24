@@ -1,14 +1,14 @@
 $borderRadius: 15px 
-    
+
 .card 
     min-width: 300px
     width: 30%
-    height: 80%
+    height: 80vh
     position: relative
 
     &__image
         width: 100%
-        height: 40%
+        height: 28vh
         object-fit: cover
         object-position: top
         border-top-left-radius: $borderRadius
@@ -16,14 +16,16 @@ $borderRadius: 15px
 
     &__tag
         position: absolute
-        top: 40%
+        top: 28vh
         left: 20px
         transform: translate(0%, -50%)
-        background-color: red
+        background-color: $main-color-1
         line-height: 16px
         font-size: 16px
-        padding: 3px 5px
+        padding: 5px
         border-radius: 5px
+        > a 
+            font-family: PlayfairDisplay, 'Times New Roman', Times, serif
 
 
     &__content
@@ -32,29 +34,34 @@ $borderRadius: 15px
         flex-direction: column
         border-bottom-left-radius: $borderRadius
         border-bottom-right-radius: $borderRadius
-        background: green
+        background: $main-color-3
         box-sizing: padding-box
-        height: 60%
+        height: 42vh
+        margin-top: -5px
 
     &__title
         font-size: 1.5rem
         line-height: 1.6rem
         margin-bottom: 1rem
+        > a 
+            font-family: PlayfairDisplay, 'Times New Roman', Times, serif
         
     &__description
         text-align: justify
-        overflow: hidden
-        margin-bottom: 10px
-        text-overflow: ellipsis
+        display: -webkit-box
+        -webkit-line-clamp: 7
+        -webkit-box-orient: vertical
+        overflow-y: hidden
 
     &__button
         text-align: center
         width: 90%
-        background-color: $main-color-2 
-        border: 2px solid $main-color-1
+        background-color: $main-color-3
+        border: 2px solid $main-color-2
         align-self: center
         margin: auto 5% 5% 5%
+        &:hover
+            background-color: $main-color-1
     &__abutton
-        color: $main-color-1
         font-size: 18px
         line-height: 40px
