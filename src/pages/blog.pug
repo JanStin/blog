@@ -1,11 +1,15 @@
 extends base/base.pug
 block content
-    h1.maintitle Заголовок на странице блога
-    +card()
-    +card()
-    +card()
-    +card()
-    +card()
-    +card()
-    +card()
-    +pagination
+    section
+        .section 
+            .herotext
+                .herotext__content 
+                    h1.herotext__title.maintitle_onlysize Добро пожаловать
+                    p.herotext__text Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quibusdam, sunt distinctio vero magnam ad ut deleniti assumenda nam! Eos sit fugiat accusamus, et nobis error dolores obcaecati architecto aut.
+            .section__content
+                +card()
+                +card()
+                +card()
+                +card()
+                +card()
+            +pagination

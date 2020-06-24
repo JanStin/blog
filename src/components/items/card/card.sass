@@ -1,10 +1,16 @@
 $borderRadius: 15px 
 
 .card 
-    min-width: 300px
     width: 30%
     height: 80vh
     position: relative
+    margin: 0 1.66666%
+    @media screen and ( max-width:  1230px)
+        width: 40%
+        margin: 0 5%
+    @media screen and ( max-width:  660px)
+        width: 90%
+        
 
     &__image
         width: 100%
@@ -49,9 +55,11 @@ $borderRadius: 15px
     &__description
         text-align: justify
         display: -webkit-box
-        -webkit-line-clamp: 7
+        -webkit-line-clamp: 6
         -webkit-box-orient: vertical
         overflow-y: hidden
+        @media screen and ( max-width:  660px)
+            -webkit-line-clamp: 8
 
     &__button
         text-align: center
