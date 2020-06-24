@@ -10,6 +10,9 @@ $borderRadius: 15px
         margin: 0 5%
     @media screen and ( max-width:  660px)
         width: 90%
+    @media screen and ( max-height:  500px)
+        min-height: 500px
+        margin-bottom: 1rem
         
 
     &__image
@@ -18,7 +21,11 @@ $borderRadius: 15px
         object-fit: cover
         object-position: top
         border-top-left-radius: $borderRadius
-        border-top-right-radius: $borderRadius
+        border-top-right-radius: $borderRadius 
+        @media screen and ( max-height:  500px)
+            min-height: 200px
+
+        
 
     &__tag
         position: absolute
@@ -30,6 +37,8 @@ $borderRadius: 15px
         font-size: 16px
         padding: 5px
         border-radius: 5px
+        @media screen and ( max-height:  500px)
+            top: 200px
         > a 
             font-family: $main-font-title
 
@@ -44,6 +53,8 @@ $borderRadius: 15px
         box-sizing: padding-box
         height: 43vh
         margin-top: -5px
+        @media screen and ( max-height:  500px)
+            height: 270px
 
     &__title
         font-size: 1.5rem
@@ -60,6 +71,10 @@ $borderRadius: 15px
         overflow-y: hidden
         @media screen and ( max-width:  660px)
             -webkit-line-clamp: 8
+        @media screen and ( max-height:  700px)
+            -webkit-line-clamp: 5
+        @media screen and ( max-height:  600px)
+            -webkit-line-clamp: 4
 
     &__button
         text-align: center
@@ -67,9 +82,10 @@ $borderRadius: 15px
         background-color: $main-color-3
         border: 2px solid $main-color-2
         align-self: center
-        margin: auto 5% 5%
+        margin: auto 5% 2%
         &:hover
             background-color: $main-color-1
+            cursor: pointer
     &__abutton
         font-size: 18px
         line-height: 40px
