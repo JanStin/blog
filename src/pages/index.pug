@@ -1,3 +1,11 @@
-//- extends base/base.pug
-//- block content
-//-     h1 tr
+extends base/base.pug
+block content    
+    +heroblock({
+        title: 'My name is Misha Kirilin',
+        subtitle: "I'm a programmer",
+        image: 'rubyfoodfight.png',
+        button: 'Узнать больше'
+    })
+    +herotext('Introducing The User Testing Field Guide', 'We’re excited to launch our awesome free field guide for individuals and teams that have always wanted to get started with usability testing but didn’t know where to start. We’re excited to launch our awesome free field guide for individuals and teams that have always wanted to get started with usability testing but didn’t know where to start. We’re excited to launch our awesome free field guide for individuals and teams that have always wanted to get started with usability testing but didn’t know where to start.')
+    +mosaic()
+    +herotext('Introducing The User Testing Field Guide', 'We’re excited to launch our awesome free field guide for individuals and teams that have always wanted to get started with usability testing but didn’t know where to start. We’re excited to launch our awesome free field guide for individuals and teams that have always wanted to get started with usability testing but didn’t know where to start. We’re excited to launch our awesome free field guide for individuals and teams that have always wanted to get started with usability testing but didn’t know where to start.')
