@@ -100,8 +100,16 @@ li
     margin: 0 auto
 
     &__content
-        display: flex 
-        flex-flow: row wrap
+        width: 100%
+        display: grid 
+        grid-template-columns: 1fr
+        @media screen and ( min-width:  700px)
+            grid-template-columns: 1fr 1fr 
+        @media screen and ( min-width:  1050px)
+            grid-template-columns: 1fr 1fr 1fr
+        
+            
+            
     
 // Блок сетки для вывод информаци обо мне
 .about
