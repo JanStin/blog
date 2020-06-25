@@ -96,6 +96,8 @@ li
     display: flex 
     flex-direction: column
     align-items: center
+    max-width: 1024px
+    margin: 0 auto
 
     &__content
         display: flex 
@@ -104,21 +106,18 @@ li
 // Блок сетки для вывод информаци обо мне
 .about
     display: grid 
+    max-width: 1024px
+    margin: 0 auto
     grid-template-columns: 40% 60%
-    @media screen and ( max-width: 1250px)
-        grid-template-columns: 25% 75%
     @media screen and ( max-width: 600px)
         grid-template-columns: 100%
         grid-auto-rows: auto auto  
 
     &__image
-        max-width: 400px
         width: 90%
         margin: 1.6rem auto 0
         position: sticky
         top: 1.6rem
-        @media screen and ( max-width: 1250px)
-            margin: 1.6rem 5% 0
         @media screen and ( max-width: 600px)
             width: 288px
             margin: 1.6rem auto
