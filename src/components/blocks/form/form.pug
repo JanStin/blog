@@ -1,11 +1,11 @@
 mixin form()
     form(action="" class="form")
-    label
-        input(type="text")
-    label
-        input(type="password")
-    label
-        input(type="checkbox")
-    input(type="button", value="Вход")
+        label.form__label Логин:
+            input(type="text" class="form__input")
+        label.form__label Пароль: 
+            input(type="password" class="form__input")
+        label.form__label Запомнить?
+            input(type="checkbox" class="form__checkbox")
+        input(type="button", value="Вход" class="form__button")
 
-+form()
+//- +form()

@@ -1,0 +1,38 @@
+.form
+    display: flex
+    flex-direction: column
+    max-width: 300px
+    box-sizing: border-box
+    border: 2px solid $main-color-2
+    margin: 25vh auto
+    background: $main-color-3-rgb
+    padding: 30px 0 20px
+
+    &__input, &__button
+        width: 90%
+        margin: 15px 5%
+
+    &__label
+        text-indent: 15px
+
+    &__input
+        line-height: 1.5rem
+        text-indent: 5px
+        border: 1px solid $main-color-2
+        &:hover
+            border-color: $main-color-1-var
+
+    &__checkbox
+        width: 1.1rem
+        height: 1.1rem
+        position: relative
+        bottom: -3px
+
+    &__button
+        box-sizing: border-box
+        background: inherit
+        border: 2px solid $main-color-2
+        padding: 10px 0
+        &:hover
+            background-color: $main-color-1-var
+            cursor: pointer
