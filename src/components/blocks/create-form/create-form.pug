@@ -1,0 +1,27 @@
+mixin create-form()
+    form.create-form 
+        p Заголовок
+        input.create-form__margin(type="text", name="")
+        .dropdown.create-form__margin
+            .dropdown__item.dropdown__active Тестирование
+            .dropdown__list
+                .dropdown__item Геймдизайн
+                .dropdown__item Разработка
+                .dropdown__item Разное
+                .dropdown__item Дизайн
+        p Описание
+        input.create-form__margin(type="text")
+        button.create-form__margin.button Загрузить картинку
+        p Статья
+        input.create-form__margin(type="text")
+        p СЕО Заголовок
+        input.create-form__margin(type="text")
+        p СЕО Описание
+        input.create-form__margin(type="text")
+        p СЕО Ключевые слова
+        input.create-form__margin(type="text")
+        .create-form__option.create-form__margin 
+            input(type="submit", value="Сохранить" class="button")
+            input(type="submit", value="Отмена" class="button")
+
+//- +create-form()

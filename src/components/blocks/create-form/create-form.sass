@@ -1,0 +1,22 @@
+.dropdown 
+    width: 260px
+    box-sizing: border-box
+    border: 1px solid $main-color-2
+    
+    &__item
+        padding: 5px 15px
+        border-top: 1px solid $main-color-2
+        cursor: pointer
+        &:hover
+            background: $main-color-1
+    &__active
+        border-top: none
+    &__list 
+        display: none
+
+.create-form
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__margin
+        margin: 5px 0 10px
